@@ -685,7 +685,8 @@ body {
   top: 50%;
   left: 50%;
   transform: scale(1) rotate(0) translate(-50%, -50%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close {
   position: absolute;
@@ -784,7 +785,7 @@ body {
   resize: none;
   background-color: transparent;
   color: var(--main-text-color);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 .modal-form-text {
@@ -804,8 +805,8 @@ body {
   align-items: center;
   text-align: center;
   margin: 0 auto;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btn:hover {
   cursor: pointer;
